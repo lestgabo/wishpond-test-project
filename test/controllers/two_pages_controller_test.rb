@@ -4,11 +4,13 @@ class TwoPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get page1" do
     get two_pages_page1_url
     assert_response :success
+    assert_select "title", "Page 1"
   end
 
   test "should get page2" do
     get two_pages_page2_url
     assert_response :success
+    assert_select "title", "Page 2"
   end
 
 end

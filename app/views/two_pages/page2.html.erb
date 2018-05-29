@@ -1,2 +1,21 @@
-<h1>TwoPages#page2</h1>
-<p>Find me in app/views/two_pages/page2.html.erb</p>
+<% provide(:title, "Page 2") %>
+<h1>Page 2</h1>
+<p>Page 2 contains: </p>
+<ol>
+  <li>An H1 element: This element displays a countdown timer that counts down from 10 to 1.
+When the timer reaches "1", it starts over from 10 again. The timer has a per-second
+resolution.</li>
+  <li>An IMG element: The application will choose a random selection of up to 10 images from
+all player-uploaded images and store the url's in an array. With each tick of the
+countdown timer, this element will display an image from the array, in order. The set of
+selected images must not change unless the page is refreshed.</li>
+  <ul> Example: If 7 images were randomly chosen by the application (because the player
+uploaded only 7 images), the images displayed for each tick will be as follows:</ul>
+  <li>A BUTTON element: When the button is clicked, the current timer value and current
+image url, should be saved to a database table called "plays". At the same time, update
+the HTML table described in #4 below with this latest entry. All of this should be done via
+Javascript/Ajax etc. (the page must not be reloaded )</li>
+  <li>An HTML table: On page load, this HTML table should be populated with all the entries
+in the "plays" database table (no pagination needed - show all records at once). The HTML table has two columns: one shows the timer value and the other shows, in an IMG
+tag, the image associated with that record.</li>
+</ol> 
