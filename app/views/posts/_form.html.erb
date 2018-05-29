@@ -4,10 +4,10 @@
     <%= f.text_field :title %>
   </div>
   
-  <%= f.fields_for :post_attachments do |p| %>
+  <%= f.fields_for :post_attachments, PostAttachment.new do |ff| %>
     <div class="field">
-      <%= p.label :title %>
-      <%= p.file_field :avatars, multiple: true, name: "post_attachments[avatars][]" %>
+      <%= ff.label :title %>
+      <%= ff.file_field :avatars, multiple: true, name: "post[post_attachments_attributes][][avatars]" %>
     </div>
   <% end %>
   

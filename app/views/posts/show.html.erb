@@ -6,7 +6,6 @@
 </p>
 
 <% @post_attachments.each do |p| %>
-  <%= image_tag p.avatar_url %>
   <%= link_to "Edit Attachment", edit_post_attachment_path(p) %>
 <% end %>
 
