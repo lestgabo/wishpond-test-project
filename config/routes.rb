@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :post_attachments
+  resources :posts
   root 'two_pages#home'
   get '/page1', to: 'two_pages#home'
   get '/page2', to: 'two_pages#page2'
