@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   root 'two_pages#home'
   get '/page1', to: 'two_pages#home'
   get '/page2', to: 'two_pages#page2'

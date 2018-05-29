@@ -1,0 +1,25 @@
+<%= form_for @product, html: { multipart: true} do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+      
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  
+  <div class="field">
+    <%= form.label :pictures %>
+    <%= form.file_field :pictures, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
