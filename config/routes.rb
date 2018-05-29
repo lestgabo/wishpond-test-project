@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'two_pages/page1'
+  get 'two_pages/home'
 
   get 'two_pages/page2'
 

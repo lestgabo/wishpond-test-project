@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class TwoPagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get page1" do
-    get two_pages_page1_url
+  test "should get home" do
+    get two_pages_home_url
     assert_response :success
     assert_select "title", "Page 1"
   end

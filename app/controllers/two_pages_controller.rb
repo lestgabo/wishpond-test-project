@@ -1,5 +1,5 @@
 class TwoPagesController < ApplicationController
-  def page1
+  def home
   end
 
   def page2
