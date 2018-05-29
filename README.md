@@ -12,3 +12,5 @@ ISSUES:
         - fixed by entering: sudo -su ubuntu  
         
     - set page1 to home
+    
+    - trying multiple upload from https://stackoverflow.com/questions/21411988/rails-4-multiple-image-or-file-upload-using-carrierwave 
