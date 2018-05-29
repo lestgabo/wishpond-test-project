@@ -1,9 +1,9 @@
 
-<%= image_tag @post_attachment.avatar %>
+<%=  %> 
 <%= form_for(@post_attachment) do |f| %>
   <div class="field">
-    <%= f.label :avatar %> <br>
-    <%= f.file_field :avatar %>
+    <%= f.label :avatars %> <br>
+    <%= f.file_field :avatars, multiple: true, name: "post_attachments[avatars][]"  %>
   </div>
 
   <div class="actions">

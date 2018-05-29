@@ -66,6 +66,6 @@ class PostAttachmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_attachment_params
-      params.require(:post_attachment).permit(:post_id, :avatar)
+      params.require(:post_attachment).permit(:post_id, {avatars: []})
     end
 end
