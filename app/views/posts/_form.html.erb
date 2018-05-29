@@ -4,19 +4,6 @@
     <%= f.text_field :title %>
   </div>
   
-  
-  <!--<% if post.errors.any? %>-->
-  <!--  <div id="error_explanation">-->
-  <!--    <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>-->
-
-  <!--    <ul>-->
-  <!--    <% post.errors.full_messages.each do |message| %>-->
-  <!--      <li><%= message %></li>-->
-  <!--    <% end %>-->
-  <!--    </ul>-->
-  <!--  </div>-->
-  <!--<% end %>-->
-  
   <%= f.fields_for :post_attachments do |p| %>
     <div class="field">
       <%= p.label :title %>
