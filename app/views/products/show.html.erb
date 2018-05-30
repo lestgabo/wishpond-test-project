@@ -6,7 +6,10 @@
 </p>
 <p>
   <strong>Pictures:</strong>
-  <%= image_tag @product.pictures[0].url %>
+  <% (0..@product.pictures.length).each do |p| %>
+
+  <% end %>
+      <%=  @product.pictures %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |

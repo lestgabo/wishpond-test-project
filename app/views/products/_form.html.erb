@@ -15,9 +15,9 @@
   <%= form.label :name %> <br>
   <%= form.text_field :name %>
   </div>
-  <div class="field">
+  <div class="field form_control">
     <%= form.label :pictures %> <br>
-    <%= form.file_field :pictures, multiple: true %>
+    <%= form.file_field :pictures, multiple: true, name:product[][] %>
   </div>
 
   <div class="actions">
